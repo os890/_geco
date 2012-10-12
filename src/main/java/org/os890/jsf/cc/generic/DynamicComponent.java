@@ -25,6 +25,7 @@ import javax.faces.context.FacesContext;
 import java.beans.IntrospectionException;
 import java.beans.Introspector;
 import java.beans.PropertyDescriptor;
+import java.io.IOException;
 import java.io.Serializable;
 import java.lang.reflect.Method;
 import java.util.Collection;
@@ -37,7 +38,7 @@ import java.util.Set;
  *
  * DON'T USE THIS CLASS AS A SHARED LIB (IF NEEDED: CHANGE THE KEYS FOR 'getters' AND 'setters')
  */
-@FacesComponent("dyn.cc")
+@FacesComponent("ge.co")
 public class DynamicComponent extends UINamingContainer implements Map
 {
     private static Map<String, Method> getters = new HashMap<String, Method>();
